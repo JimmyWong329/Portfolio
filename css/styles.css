@@ -31,3 +31,15 @@ img {
     max-width: 600px;
     height: auto;
 }
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Optional: Make iframe responsive */
+@media (max-width: 768px) {
+    iframe {
+        height: 400px;
+    }
+}
+
