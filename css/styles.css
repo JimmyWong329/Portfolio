@@ -85,27 +85,6 @@ img {
     margin-top: 1em;
 }
 
-/* Image Gallery */
-.images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 2em 0;
-}
-
-.images img {
-    width: 200px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.images img:hover {
-    transform: scale(1.1);
-}
-
 /* Popup styling */
 .popup {
     position: fixed;
