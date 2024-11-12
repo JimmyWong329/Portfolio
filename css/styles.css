@@ -76,9 +76,18 @@ p {
     color: #666;
 }
 
-img {
-    width: 100%;
-    max-width: 600px;
+/* Flex container for images */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery img {
+    flex: 1 1 auto;
+    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -130,5 +139,9 @@ img {
     iframe {
         height: 400px;
     }
-}
 
+    /* Stack images vertically on small screens */
+    .image-gallery {
+        flex-direction: column;
+    }
+}
