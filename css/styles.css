@@ -76,20 +76,13 @@ p {
     color: #666;
 }
 
-/* Gallery section styling */
-.images {
-    display: flex;
-    justify-content: space-between; /* Ensures space between images */
-    gap: 1em; /* Adds some space between the images */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
-    margin-top: 2em;
-}
-
-.images img {
-    max-width: 48%; /* Ensures images don't take up too much space, keeping them side by side */
-    height: auto; /* Keeps aspect ratio intact */
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 1em;
 }
 
 /* Popup styling */
@@ -136,15 +129,5 @@ p {
 
     iframe {
         height: 400px;
-    }
-
-    /* Stack images vertically on small screens */
-    .images {
-        flex-direction: column; /* Stacks images vertically */
-        align-items: center; /* Centers images on the screen */
-    }
-
-    .images img {
-        max-width: 90%; /* Reduces image size on small screens */
     }
 }
